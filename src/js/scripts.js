@@ -1,7 +1,10 @@
-// This is where you should write all JavaScript
-// for your project. Remember a few things as you start!
-// - Use let or const for all variables
-// - Do not use jQuery - use JavaScript instead
-// - Do not use onclick - use addEventListener instead
-// - Run npm run test regularly to check autograding
-// - You'll need to link this file to your HTML :)
+//chat gpt prompt: javascript to make the pictures outline in glowing red when clicked on to show they are selected without using onclick, use event listener instead
+document.addEventListener('DOMContentLoaded', function () {
+	const images = document.querySelectorAll('.food-labels img');
+	images.forEach(image => {
+		image.addEventListener('click', () => {
+			image.classList.toggle('selected');
+		});
+	});
+});
+
