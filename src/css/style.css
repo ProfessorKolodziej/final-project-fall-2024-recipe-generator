@@ -31,6 +31,12 @@
 
 body {
 	background-color: #ABEB8D;
+	padding: 15px;
+}
+
+.content-container {
+	border: 15px solid white;
+	padding: 20px 30px;
 }
 
 .main-title {
