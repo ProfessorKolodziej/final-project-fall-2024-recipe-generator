@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Julius+Sans+One&family=Klee+One:wght@400;600&family=Kranky&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*chat gpt prompt: responsive media queries for desktop, tablet, and mobile sizes*/
+@media screen and (min-width: 1280px) {
+	.food-labels {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.food-labels img {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media screen and (min-width: 834px) {
+	.food-labels {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.food-labels img {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+body {
+	background-color: #ABEB8D;
+	padding: 15px;
+}
+
+.content-container {
+	border: 15px solid white;
+	padding: 20px 30px;
+}
+
+.main-title {
+	font-family: "Kranky";
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.description {
+	color: #000;
+	text-align: center;
+	font-family: "Klee One";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.emoji-break {
+	font-size: 60px;
+	text-align: center;
+}
+
+.instructions {
+	color: #000;
+	text-align: center;
+	font-family: "Klee One";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.category-title {
+	color: #000;
+	text-align: center;
+	font-family: "Julius Sans One";
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.food-labels {
+	color: #000;
+	font-family: "Klee One";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.food-labels img {
+	width: 120px;
+	height: 120px;
+	object-fit: contain;
+	margin-bottom: 8px;
+}
+
+.food-labels {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	justify-items: center;
+}
+
+.food-labels li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.get-recipe-button {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.get-recipe-button {
+	background-color: #FE5A5A;
+	color: black;
+	text-align: center;
+	font-family: "Jua";
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 12px;
+}
+
+.selected {
+	outline: 4px solid red;
+	box-shadow: 0 0 10px red;
+	border-radius: 10px;
+}
