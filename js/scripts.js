@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 
-	const button = document.querySelector('.get-recipe-button button');
+	const button = document.querySelector('.get-recipe-button');
 	button.addEventListener('click', () => {
 		if (selectedIngredients.size === 0) {
 			alert("Please select at least one ingredient.");

@@ -6,28 +6,6 @@
 	padding: 0;
 }
 
-/*chat gpt prompt: responsive media queries for desktop, tablet, and mobile sizes*/
-@media screen and (min-width: 1280px) {
-	.food-labels {
-		grid-template-columns: repeat(6, 1fr);
-	}
-
-	.food-labels img {
-		width: 90px;
-		height: 90px;
-	}
-}
-
-@media screen and (min-width: 834px) {
-	.food-labels {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.food-labels img {
-		width: 80px;
-		height: 80px;
-	}
-}
 
 body {
 	background-color: #ABEB8D;
@@ -37,73 +15,6 @@ body {
 .content-container {
 	border: 15px solid white;
 	padding: 20px 30px;
-}
-
-.main-title {
-	font-family: "Kranky";
-	font-size: 60px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	position: relative;
-	text-align: center;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-.description {
-	color: #000;
-	text-align: center;
-	font-family: "Klee One";
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-.emoji-break {
-	font-size: 60px;
-	text-align: center;
-}
-
-.instructions {
-	color: #000;
-	text-align: center;
-	font-family: "Klee One";
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-.category-title {
-	color: #000;
-	text-align: center;
-	font-family: "Julius Sans One";
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
-.food-labels {
-	color: #000;
-	font-family: "Klee One";
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
-.food-labels img {
-	width: 120px;
-	height: 120px;
-	object-fit: contain;
-	margin-bottom: 8px;
 }
 
 .food-labels {
@@ -123,9 +34,9 @@ body {
 	justify-content: center;
 }
 
-.get-recipe-button {
-	text-align: center;
-	margin: 30px 0;
+.button-style {
+	display: flex;
+	justify-content: center;
 }
 
 .get-recipe-button {
@@ -140,10 +51,249 @@ body {
 	padding: 12px 30px;
 	border: none;
 	border-radius: 12px;
+	text-transform: uppercase;
+	margin: 20px 0;
 }
 
 .selected {
 	outline: 4px solid red;
 	box-shadow: 0 0 10px red;
 	border-radius: 10px;
+}
+
+.category-title-center {
+	text-align: center;
+}
+
+/*chat gpt prompt: responsive media queries for desktop, tablet, and mobile sizes*/
+@media screen and (min-width: 375px) {
+	.food-labels {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.main-title {
+		font-family: "Kranky";
+		font-size: 70px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		position: relative;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.description {
+		color: #000;
+		text-align: center;
+		font-family: "Klee One";
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.emoji-break {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.instructions {
+		color: #000;
+		text-align: center;
+		font-family: "Klee One";
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.food-labels img {
+		width: 130px;
+		height: 130px;
+		object-fit: contain;
+		margin-bottom: 8px;
+	}
+
+	.category-title {
+		color: #000;
+		text-align: center;
+		font-family: "Julius Sans One";
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		background-color: #ffff66;
+		padding: 8px 12px;
+		border-radius: 15px;
+		display: inline-block;
+	}
+
+	.food-labels {
+		color: #000;
+		font-family: "Klee One";
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.food-labels {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.main-title {
+		font-family: "Kranky";
+		font-size: 80px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		position: relative;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.description {
+		color: #000;
+		text-align: center;
+		font-family: "Klee One";
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.emoji-break {
+		font-size: 70px;
+		text-align: center;
+	}
+
+	.instructions {
+		color: #000;
+		text-align: center;
+		font-family: "Klee One";
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.food-labels img {
+		width: 130px;
+		height: 130px;
+		object-fit: contain;
+		margin-bottom: 8px;
+	}
+
+	.category-title {
+		color: #000;
+		text-align: center;
+		font-family: "Julius Sans One";
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.food-labels {
+		color: #000;
+		font-family: "Klee One";
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.food-labels {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.main-title {
+		font-family: "Kranky";
+		font-size: 90px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		position: relative;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.description {
+		color: #000;
+		text-align: center;
+		font-family: "Klee One";
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.emoji-break {
+		font-size: 80px;
+		text-align: center;
+	}
+
+	.instructions {
+		color: #000;
+		text-align: center;
+		font-family: "Klee One";
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.food-labels img {
+		width: 130px;
+		height: 130px;
+		object-fit: contain;
+		margin-bottom: 8px;
+	}
+
+	.category-title {
+		color: #000;
+		text-align: center;
+		font-family: "Julius Sans One";
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.food-labels {
+		color: #000;
+		font-family: "Klee One";
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
 }
